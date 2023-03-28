@@ -1,0 +1,52 @@
+@import '../Common/Styles/saas/variables';
+@import '../Common/Styles/saas/mixins';
+
+.footerBlock {
+  min-height: 10vh;
+  background-color: $bgSecondColor;
+  padding: 60px 0;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .footerElementsContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      gap: 100px;
+
+
+      .footerElement {
+        height: 50px;
+        width: 50px;
+
+        & > a {
+          @include text($fontFamilyMain, 16px, 1);
+          text-decoration: none;
+        }
+
+        & > a:hover {
+          color: $primaryColor;
+        }
+
+      }
+    }
+  }
+
+  .title {
+    @include text($fontFamilyMain, 16px, 1.2);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+

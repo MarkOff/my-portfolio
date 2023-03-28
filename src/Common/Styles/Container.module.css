@@ -1,0 +1,15 @@
+.container{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1310px){
+    .container{
+        justify-content: center;
+    }
+}

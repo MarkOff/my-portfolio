@@ -1,0 +1,29 @@
+@import '../Common/Styles/saas/variables';
+
+.projectsBlock {
+  min-height: 85vh;
+  background-color: $bgColor;
+  padding-top: 200px;
+
+  .projectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    .projects {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      @media screen and (max-width: 1266px) {
+        justify-content: center;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+
+

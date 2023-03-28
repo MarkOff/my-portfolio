@@ -1,0 +1,35 @@
+@import '../Common/Styles/saas/mixins';
+@import '../Common/Styles/saas/variables';
+
+.jobBlock {
+  min-height: 30vh;
+  background-color: $bgSecondColor;
+  padding-top: 100px;
+
+  .jobContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .button {
+      @include text($fontFamilyDescription, 16px, 1.2);
+      height: 40px;
+      width: 150px;
+      background-color: $primaryColor;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

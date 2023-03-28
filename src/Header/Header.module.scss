@@ -1,0 +1,12 @@
+@import '../Common/Styles/saas/variables';
+@import '../Common/Styles/saas/mixins';
+
+.header {
+    display: flex;
+    height: 100px;
+    background-color: $bgSecondColor;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+

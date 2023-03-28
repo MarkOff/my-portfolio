@@ -1,0 +1,72 @@
+@import '../../Common/Styles/saas/variables';
+@import '../../Common/Styles/saas/mixins';
+
+
+.project {
+  width: 500px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+
+  .icon {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+
+
+    .button {
+      height: 40px;
+      width: 150px;
+      background-color: $primaryColor;
+      cursor: pointer;
+      text-decoration: none;
+      color: $textColor;
+      padding-top: 15px;
+      font-family: 'Roboto Mono', monospace;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .projectInfo {
+    padding: 25px 20px;
+
+    .title {
+      @include text($fontFamilyMain, 16px, 1.2);
+      letter-spacing: 1px;
+    }
+
+    .description {
+      @include text($fontFamilyDescription, 13px, 1.8);
+      font-weight: 400;
+    }
+  }
+
+}
+
+
+
+
+
+
+
