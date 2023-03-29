@@ -7,7 +7,7 @@ export const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={`${sContainer.container} ${s.footerContainer}`}>
-                <Title title={'Contacts'}/>
+                <Title title={'Feedback'}/>
 
                 <div className={s.footerElementsContainer}>
                     <div className={s.footerElement}>

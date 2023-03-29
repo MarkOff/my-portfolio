@@ -1,9 +1,9 @@
 import React from 'react';
-import s from './Contacts.module.scss'
+import s from './Feedback.module.scss'
 import sContainer from '../Common/Styles/Container.module.css'
 import {Title} from '../Common/components/title/Title';
 
-export const Contacts = () => {
+export const Feedback = () => {
     return (
         <div className={s.contactsBlock}>
             <div className={`${sContainer.container} ${s.contactsContainer}`}>
