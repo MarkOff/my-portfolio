@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {Header} from './Header/Header';
-import {Nav} from './Nav/Nav';
+import {Nav} from './Header/Nav/Nav';
 import {Main} from './Main/Main';
 import {Skills} from './Skills/Skills';
 import {MyProjects} from './MyProjects/MyProjets';

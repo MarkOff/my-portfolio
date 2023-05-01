@@ -5,21 +5,18 @@
 .project {
   width: 500px;
   background-color: $bgSecondColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(row, space-around, center, wrap);
   text-align: center;
   padding-bottom: 20px;
+  @media screen and (max-width: 520px) {
+    width: 300px;
+  }
 
   .icon {
     height: 350px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include flex(row, center, center, wrap);
+    @include bgSettings();
     position: relative;
 
     &::before {
@@ -31,20 +28,6 @@
       left: 0;
       right: 0;
       opacity: 0.4;
-    }
-
-
-    .button {
-      height: 40px;
-      width: 150px;
-      background-color: $primaryColor;
-      cursor: pointer;
-      text-decoration: none;
-      color: $textColor;
-      padding-top: 15px;
-      font-family: 'Roboto Mono', monospace;
-      position: relative;
-      z-index: 1;
     }
   }
 

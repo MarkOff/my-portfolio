@@ -3,29 +3,21 @@
 
 
 .skillsBlock {
-  min-height: 50vh;
-  background-color: $bgSecondColor;
+  min-height: 75vh;
   padding: 100px 0;
-  display: flex;
-  align-items: center;
+  @include flex(row, center, center, wrap);
 
   .skillsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
 
     .skills {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      flex-wrap: wrap;
+      @include flex(row, space-between, start, wrap);
       margin-top: 30px;
       //box-sizing: border-box;
       @media screen and (max-width: 955px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center, wrap);
         align-content: center;
         gap: 15px;
       }

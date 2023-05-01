@@ -9,8 +9,9 @@
 
 }
 
-@media screen and (max-width: 1310px){
+@media screen and (max-width: 1435px){
     .container{
         justify-content: center;
+        align-items: center;
     }
 }

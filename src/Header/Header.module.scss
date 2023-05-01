@@ -2,10 +2,12 @@
 @import '../Common/Styles/saas/mixins';
 
 .header {
-    display: flex;
-    height: 100px;
-    background-color: $bgSecondColor;
-    justify-content: flex-end;
-    align-items: center;
+    height: 80px;
+    width: 100%;
+    @include flex(row, flex-end, center, nowrap);
+    z-index: 9999;
+    background-color: red;
+    position: fixed;
+    opacity: 0.9;
 }
 

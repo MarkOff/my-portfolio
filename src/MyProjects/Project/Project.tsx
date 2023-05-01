@@ -1,4 +1,6 @@
 import s from './Project.module.scss'
+import React from 'react';
+import {Button} from '../../Common/components/button/Button';
 
 type ProjectType = {
     title: string
@@ -13,7 +15,8 @@ export const Project = (props: ProjectType) => {
         <div className={s.project}>
 
             <div className={s.icon} style={props.style}>
-                <a className={s.button}>VIEW</a>
+                {/*<a className={s.button}>VIEW</a>*/}
+                <Button name={'VIEW'}/>
             </div>
 
             <div className={s.projectInfo}>

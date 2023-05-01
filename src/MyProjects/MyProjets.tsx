@@ -5,8 +5,7 @@ import {Project} from './Project/Project';
 import {Title} from '../Common/components/title/Title';
 import todoImg from './../assets/image/img_1.png'
 import socialImg from './../assets/image/img.png'
-
-
+import { Fade } from 'react-awesome-reveal';
 
 
 export const MyProjects = () => {
@@ -20,18 +19,24 @@ export const MyProjects = () => {
 
 
     return (
-        <div className={s.projectsBlock}>
-            <div className={`${sContainer.container} ${s.projectsContainer}`}>
+        <div id ={'projects'} className={s.projectsBlock}>
+            <div className={s.projectsContainer}>
+                <Fade direction={'down'} triggerOnce={true}>
                 <Title title={'Projects'}/>
+                </Fade>
                 <div className={s.projects}>
+                    <Fade direction={'left'} triggerOnce={true}>
                     <Project title={'Social network'}
-                             description={'STACK: TypeScript, React, React-Router, Redux, Redux-Thunk, Formik, Axios, '}
+                             description={'STACK: TypeScript, React, React-Router, Redux, Redux-Thunk, Formik, Axios. '}
                              style={social}
                     />
+                    </Fade>
+                    <Fade direction={'right'} triggerOnce={true}>
                     <Project title={'Todolist'}
-                             description={'STACK: TypeScript, React, React-Router, Redux, Redux-Thunk, MUI, Formik, Axios, StoryBook, Jest'}
+                             description={'STACK: TypeScript, React, React-Router, Redux, Redux-Thunk, MUI, Formik, Axios, Jest.'}
                              style={todolist}
                     />
+                    </Fade>
                 </div>
             </div>
         </div>

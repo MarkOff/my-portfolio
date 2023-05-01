@@ -3,23 +3,20 @@
 
 .footerBlock {
   min-height: 10vh;
-  background-color: $bgSecondColor;
   padding: 60px 0;
-  display: flex;
-  align-items: center;
+  @include flex(row, center, center, wrap);
 
 
   .footerContainer {
-    flex-direction: column;
-    justify-content: center;
+    @include container();
+    @include flex(column, center, center, wrap);
     @media screen and (max-width: 630px) {
       justify-content: center;
       align-content: center;
     }
 
     .footerElementsContainer {
-      display: flex;
-      justify-content: center;
+      @include flex(row, center, center, wrap);
       gap: 100px;
       @media screen and (max-width: 630px) {
         justify-content: center;

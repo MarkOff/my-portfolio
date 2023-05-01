@@ -1,0 +1,29 @@
+@import '../../Common/Styles/saas/variables';
+@import '../../Common/Styles/saas/mixins';
+
+.nav {
+  width: 400px;
+  @include flex(row, space-around, center, wrap);
+  a {
+    @include text($fontFamilyDescription, 18px, 1.2);
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  .active {
+    color: $primaryColor;
+  }
+  @media screen and (max-width: 400px){
+    display: none;
+
+  }
+
+}
+
+
+
+
