@@ -6,7 +6,7 @@ type ProjectType = {
     title: string
     description: string
     style: {}
-
+    urlProject: string
 }
 
 export const Project = (props: ProjectType) => {
@@ -15,8 +15,7 @@ export const Project = (props: ProjectType) => {
         <div className={s.project}>
 
             <div className={s.icon} style={props.style}>
-                {/*<a className={s.button}>VIEW</a>*/}
-                <Button name={'VIEW'}/>
+                <Button id={props.urlProject} name={'VIEW'}/>
             </div>
 
             <div className={s.projectInfo}>

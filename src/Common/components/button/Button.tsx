@@ -4,11 +4,12 @@ import s from './Button.module.scss'
 type Props = {
     name: string
     id?: string
+    onHandler?: (event: any) => void
 }
 
-export const Button: FC<Props> = ({name, id}) => {
+export const Button: FC<Props> = ({name, id, onHandler}) => {
     return (
-            <a href={id} className={s.button} type="submit">{name}</a>
+            <a onClick={onHandler} href={id} className={s.button} type="submit">{name}</a>
     );
 };
 

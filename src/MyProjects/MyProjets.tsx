@@ -26,13 +26,13 @@ export const MyProjects = () => {
                 </Fade>
                 <div className={s.projects}>
                     <Fade direction={'left'} triggerOnce={true}>
-                    <Project title={'Social network'}
+                    <Project title={'Social network'} urlProject={'https://markoff.github.io/samurai-way-main_02'}
                              description={'STACK: TypeScript, React, React-Router, Redux, Redux-Thunk, Formik, Axios. '}
                              style={social}
                     />
                     </Fade>
                     <Fade direction={'right'} triggerOnce={true}>
-                    <Project title={'Todolist'}
+                    <Project title={'Todolist'} urlProject={'https://markoff.github.io/todoMain'}
                              description={'STACK: TypeScript, React, React-Router, Redux, Redux-Thunk, MUI, Formik, Axios, Jest.'}
                              style={todolist}
                     />

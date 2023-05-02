@@ -1,5 +1,6 @@
 @import '../Common/Styles/saas/mixins';
 @import '../Common/Styles/saas/variables';
+@import '../Common/components/button/Button.module';
 
 .jobBlock {
   min-height: 30vh;
@@ -14,17 +15,52 @@
       justify-content: center;
       align-content: center;
     }
+
     .button {
+      @include flex(row, center, center, wrap);
       @include text($fontFamilyDescription, 16px, 1.2);
-      height: 40px;
-      width: 150px;
-      background-color: $primaryColor;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 20px;
+      max-width: 100px;
+      width: 100%;
+      color: $textColor;
+      outline: none;
+      position: relative;
+      z-index: 0;
       cursor: pointer;
       text-decoration: none;
-      text-align: center;
-      padding-top: 20px;
+      margin-top: 10px;
+      border: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background-color: $primaryColor;
+        bottom: 0;
+        z-index: -1;
+        transition: all 0.2s ease-in-out;
+
+      }
+
+      &:hover{
+        text-decoration: none;
+        color: $textColor;
+        &::after {
+          width: 100%;
+          height: 100%;
+          transition: all 0.3s ease-in-out 0s;
+        }
+      }
+
     }
+
+
   }
+
 }
 
 

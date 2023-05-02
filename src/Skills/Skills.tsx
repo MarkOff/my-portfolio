@@ -31,13 +31,13 @@ export const Skills = () => {
                 <div className={s.skills}>
                     <Fade direction={'left'} triggerOnce={true}>
                     <Skill title={'JAVASCRIPT / TYPESCRIPT'}
-                           description={'Promise, RestAPI, Unit-tests'}
+                           description={'Promise, RestAPI, ES6+, Unit-tests'}
                            style={js}
                     />
                     </Fade>
                     <Fade direction={'up'} triggerOnce={true}>
                     <Skill title={'REACT & REDUX'}
-                           description={'Redux-Thunk, Redux Toolkit'}
+                           description={'Redux(toolkit), Redux-Thunk, React router dom, Formik, React hook form'}
                            style={react}
                     />
                     </Fade>
