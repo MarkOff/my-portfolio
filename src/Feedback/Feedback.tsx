@@ -27,7 +27,7 @@ export const Feedback = () => {
 
     const handleSubmit = (event: any) => {
         event.preventDefault();
-        axios.post('https://gmail-smtp-tqybf7tr8-markoff.vercel.app/sendMessage', { name, email, message })
+        axios.post('https://gmail-smtp-pi.vercel.app/sendMessage', { name, email, message })
             .then(() => {
                 setEmail('')
                 setName('')
