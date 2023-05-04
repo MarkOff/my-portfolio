@@ -72,7 +72,9 @@
       min-width: 300px;
     }
   }
-
+.textFeedBack {
+  @include text($fontFamilyDescription, 30px, 3.0);
+}
 
 }
 
