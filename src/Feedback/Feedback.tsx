@@ -53,7 +53,7 @@ export const Feedback = () => {
                                 <input value={name} onChange={(event) => setName(event.currentTarget.value)}
                                        placeholder={'Name'} id={'name'} type="text" disabled={isSubmitted}/>
                             </Fade>
-                            <Fade direction={'right'} triggerOnce={true} className={s.formBlock}>
+                            <Fade direction={'left'} triggerOnce={true} className={s.formBlock}>
                                 <input value={email} onChange={(event) => setEmail(event.currentTarget.value)}
                                        placeholder={'E-mail'} id={'email'} type="text" disabled={isSubmitted}/>
                             </Fade>

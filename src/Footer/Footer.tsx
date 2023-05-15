@@ -12,7 +12,7 @@ export const Footer = () => {
                 </Fade>
 
                 <div className={s.footerElementsContainer}>
-                    <Fade direction={'left'} triggerOnce={true}>
+                    <Fade direction={'down'} triggerOnce={true}>
                     <div className={s.footerElement}>
                         <a target="_blank"
                            href="https://www.linkedin.com/in/vladislav-markov-9984b6262/">
@@ -27,7 +27,7 @@ export const Footer = () => {
                         </a>
                     </div>
                     </Fade>
-                    <Fade direction={'right'} triggerOnce={true}>
+                    <Fade direction={'down'} triggerOnce={true}>
                     <div className={s.footerElement}>
                         <a target="_blank"
                            href="https://t.me/Big_Brother_is_Watching_Y0u">

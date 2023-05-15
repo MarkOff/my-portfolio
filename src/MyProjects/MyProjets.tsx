@@ -25,13 +25,13 @@ export const MyProjects = () => {
                 <Title title={'Projects'}/>
                 </Fade>
                 <div className={s.projects}>
-                    <Fade direction={'left'} triggerOnce={true}>
+                    <Fade direction={'down'} triggerOnce={true}>
                     <Project title={'Social network'} urlProject={'https://markoff.github.io/samurai-way-main_02'}
                              description={'STACK: TypeScript, React, React-Router, Redux, Redux-Thunk, Formik, Axios. '}
                              style={social}
                     />
                     </Fade>
-                    <Fade direction={'right'} triggerOnce={true}>
+                    <Fade direction={'down'} triggerOnce={true}>
                     <Project title={'Todolist'} urlProject={'https://markoff.github.io/todoMain'}
                              description={'STACK: TypeScript, React, React-Router, Redux, Redux-Thunk, MUI, Formik, Axios, Jest.'}
                              style={todolist}

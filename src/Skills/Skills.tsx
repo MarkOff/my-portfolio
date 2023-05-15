@@ -29,19 +29,19 @@ export const Skills = () => {
                 </Fade>
 
                 <div className={s.skills}>
-                    <Fade direction={'left'} triggerOnce={true}>
+                    <Fade direction={'down'} triggerOnce={true}>
                     <Skill title={'JAVASCRIPT / TYPESCRIPT'}
                            description={'Promise, RestAPI, ES6+, Unit-tests'}
                            style={js}
                     />
                     </Fade>
-                    <Fade direction={'up'} triggerOnce={true}>
+                    <Fade direction={'down'} triggerOnce={true}>
                     <Skill title={'REACT & REDUX'}
                            description={'Redux(toolkit), Redux-Thunk, React router dom, Formik, React hook form'}
                            style={react}
                     />
                     </Fade>
-                    <Fade direction={'right'} triggerOnce={true}>
+                    <Fade direction={'down'} triggerOnce={true}>
                     <Skill title={'HTML & CSS'}
                            description={'Grid, Flex, LESS, SCSS'}
                            style={html}

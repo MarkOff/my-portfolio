@@ -10,11 +10,10 @@ export const JobOptions = () => {
     return (
         <div className={s.jobBlock}>
             <div className={s.jobContainer}>
+                <Fade direction={'down'} triggerOnce={true}>
                 <Title title={'Considering remote work options'}/>
-                <Fade className={s.jobContainer}  direction={'down'} triggerOnce={true}>
                 </Fade>
                 <Fade className={s.jobContainer} direction={'up'} triggerOnce={true}>
-                    {/*<Button  id={'#feedback'} name={'Hire me'}/>*/}
                     <Link className={s.button} activeClass={s.button} to="feedback" spy={true} smooth={true}
                           offset={-100} duration={500}>
                         Hire me

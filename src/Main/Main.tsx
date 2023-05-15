@@ -13,16 +13,16 @@ export const Main = () => {
 
     return (
         <div id={'main'} className={s.mainBlock}>
-            <Particle/>
+            {/*<Particle/>*/}
                 <div className={s.container}>
-                    <Fade direction={'left'} triggerOnce={true}>
+                    <Fade direction={'down'} triggerOnce={true}>
                     <div className={s.greeting}>
                         <span>Hi There </span>
                         <span> I am Vladislav <span>Markov</span> </span>
                         <ReactTypingEffect  text={'Frontend Developer.'}/>
                     </div>
                     </Fade>
-                    <Fade direction={'right'} triggerOnce={true}>
+                    <Fade direction={'down'} triggerOnce={true}>
                     <Tilt options={{max: 25}}>
                         <div className={s.photo}>
                         <div className={s.image}></div>
