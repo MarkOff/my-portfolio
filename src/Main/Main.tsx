@@ -13,7 +13,7 @@ export const Main = () => {
 
     return (
         <div id={'main'} className={s.mainBlock}>
-            {/*<Particle/>*/}
+            <Particle/>
                 <div className={s.container}>
                     <Fade direction={'down'} triggerOnce={true}>
                     <div className={s.greeting}>
